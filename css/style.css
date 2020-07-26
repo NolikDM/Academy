@@ -32,16 +32,16 @@ a:hover {
     background: #0f7bff;
     z-index: 9998; /*14*/
     overflow: hidden;
-    transition: all ease .4s
+    transition: all ease .4s;
 }
 
 .mobile-menu.js_active {
-    right: 0
+    right: 0;
 }
 
 .mobile-menu__nav {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .mobile-menu__link {
@@ -50,7 +50,7 @@ a:hover {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    color: #fff
+    color: #fff;
 }
 
 .header {
@@ -65,15 +65,15 @@ a:hover {
 
 .header.js_scroll {
     position: fixed;
-    background: #0f7bff
+    background: #0f7bff;
 }
 
 .header.js_scroll .header__humb span {
-    background: #fff
+    background: #fff;
 }
 
 .header.js_scroll .header__menu .header__link {
-    color: #fff
+    color: #fff;
 }
 
 .header__logo {
@@ -113,23 +113,23 @@ a:hover {
     width: 40px;
     background: #0f7bff;
     border-radius: 3px;
-    transition: all ease .2s
+    transition: all ease .2s;
 }
 
 .header__humb.js_active span {
-    background: #fff
+    background: #fff;
 }
 
 .header__humb.js_active span:nth-of-type(1) {
-    width: 20px
+    width: 20px;
 }
 
 .header__humb.js_active span:nth-of-type(2) {
-    width: 30px
+    width: 30px;
 }
 
 .header .signUp-btn {
-    margin-left: 50px
+    margin-left: 50px;
 }
 
 
@@ -138,7 +138,7 @@ a:hover {
 	position: relative;
 	height: 100vh;
 	background: #f5fcfd;
-	background-image: url("../img/header/bg_main.png");
+	background-image: url("../img/back_main.png");
 	background-size: cover;
 	background-position: bottom 0 left 5%;
 	background-repeat: no-repeat;
@@ -646,7 +646,7 @@ a:hover {
 	padding: 130px 0;
 	height: 608px;
 	background: #f5fcfd;
-	background-image: url("../img/slider/back_people.png");
+	background-image: url("../img/back_people.png");
 	background-size: contain;
 	background-position: top 0 left 0;
 	background-repeat: no-repeat;
@@ -971,19 +971,16 @@ a:hover {
 
 /* Адаптив */
 @media (min-width: 992px) and (max-width: 1199px) {
- 
-  html, body {
-  	text-align: center;
-  	padding:0; 
-  	margin:0;
-  }
+	html, body {
+  		text-align: center;
+  		padding:0; 
+  		margin:0;
+	}
 
-  .main {
-    background-size: 123%;
-    background-position: bottom 50% left 10%;
-  }
-
-  .header__menu{
+	.main {
+    	background-size: 123%;
+    	background-position: bottom 50% left 10%;
+  	}  .header__menu{
   	position: relative;
   	right: -30px;
   }
@@ -1029,6 +1026,7 @@ a:hover {
   }
 
   .main {
+	height: 800px;
     background-size: 130%;
     background-position: bottom 30% left 85%;
   }
@@ -1062,6 +1060,7 @@ a:hover {
   }
 
   .main {
+	  height: 850px;
     background-size: 100%;
   	background-position: right top;
   }
@@ -1081,7 +1080,7 @@ a:hover {
   }
   
   .main{
-  	height: 1340px;
+	height: 900px;
     background-size: 96%;
     background-position: right top;
   }
