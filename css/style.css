@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
+html, body{
+	width:100%;
+	height:100%;
+}
+
+html{
+	/* overflow-x: hidden; */
+}
+
 body{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
@@ -30,21 +39,25 @@ a:hover {
     width: 100vw;
     height: 100vh;
     background: #0f7bff;
-    z-index: 9998; /*14*/
+    z-index: 9998;
     overflow: hidden;
     transition: all ease .4s;
 }
 
-.mobile-menu.js_active {
+.mobile-menu .signUp-btn{
+	margin-left: 40px;
+}
+
+.mobile-menu.js_active{
     right: 0;
 }
 
-.mobile-menu__nav {
+.mobile-menu__nav{
     display: flex;
     flex-direction: column;
 }
 
-.mobile-menu__link {
+.mobile-menu__link{
     margin: 10px 0;
     font-size: 20px;
     font-weight: 500;
@@ -53,30 +66,30 @@ a:hover {
     color: #fff;
 }
 
-.header {
+.header{
     position: absolute;
     padding: 0 190px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9999; /*15*/
+    z-index: 9999;
 }
 
-.header.js_scroll {
+.header.js_scroll{
     position: fixed;
     background: #0f7bff;
 }
 
-.header.js_scroll .header__humb span {
+.header.js_scroll .header__humb span{
     background: #fff;
 }
 
-.header.js_scroll .header__menu .header__link {
+.header.js_scroll .header__menu .header__link{
     color: #fff;
 }
 
-.header__logo {
+.header__logo{
     display: inline-block;
     padding: 30px 25px;
     font-size: 36px;
@@ -131,7 +144,6 @@ a:hover {
 .header .signUp-btn {
     margin-left: 50px;
 }
-
 
 .main{
 	padding-top: 140px;
@@ -240,7 +252,7 @@ a:hover {
   transform: translateX(-50%);
 }
 
-.advantages-down:hover {
+.advantages-down:hover{
   color: #0f7bff;
   border: 1px solid #0f7bff;
 }
@@ -257,9 +269,10 @@ a:hover {
 	background: #ffffff;
 	padding-left: 0px;
 	padding-right: 0px;
+	box-shadow: 4px 4px 35px 1px rgba(0, 0, 0, 0.15);
 }
 
-.rectangle h3{
+.rectangle h4{
 	position: relative;
 	top: 60px;
 	margin-bottom: 0px;
@@ -269,6 +282,7 @@ a:hover {
 
 .rectangle p{
 	color: #929292;
+	margin-top: 10px;
 	position: relative;
 	top: 90px;
 	font-style: normal;
@@ -296,6 +310,7 @@ a:hover {
 
 .circle{
 	position: relative;
+	margin-top: -25px;
 	top: 40px;
 	width: 70px;
 	height: 70px;
@@ -412,7 +427,6 @@ a:hover {
 	bottom: 562px;
 }
 
-
 .works{
 	background-color: #f5fcfd;
 	height: 646px;
@@ -425,7 +439,6 @@ a:hover {
 	color: #000000;
 	font-weight: 500;
 	font-size: 43px;
-	font-height: 48px;
 	margin-bottom: 20px;
 }
 
@@ -435,7 +448,6 @@ a:hover {
 	color: #000000;
 	font-weight: 500;
 	font-size: 24px;
-	font-height: 36px;
 	margin-bottom: 30px;
 }
 
@@ -525,7 +537,6 @@ a:hover {
 	border-bottom-right-radius: 35px;
 }
 
-
 .day-btn:hover{
 	background-color: #0f7bff;
 	color: #fff;
@@ -554,7 +565,6 @@ a:hover {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-
 
 .price-block p{
 	color: #000000;
@@ -826,7 +836,6 @@ a:hover {
 	height: 336px;
 	padding: 130px 0;
 	background: #f5fcfd;
-
 }
 
 .trial h3{
@@ -970,45 +979,926 @@ a:hover {
 }
 
 /* Адаптив */
-@media (min-width: 992px) and (max-width: 1199px) {
-	html, body {
-  		text-align: center;
-  		padding:0; 
-  		margin:0;
+@media (min-width: 320px) and (max-width: 475px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .header__logo {
+        padding: 30px 20px;
+        font-size: 32px
+    }
+
+    .main {
+        padding-top: 100px;
+        background-size: 200%;
+        background-position: bottom;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .main img{
+        max-width: 300px;
+    }
+
+    .features{
+    	height: 1050px;
+    }
+
+  	.rectangle{
+  		position: relative;
+  		top: 0px;
+  		width: auto;
+  		margin: 0 auto;
+  	}
+
+  	.block1, .block2, .block3{
+    	position: relative;
+    	left: 0px;
+    	margin-bottom: 10px;
+    } 
+  
+  	.rectangle h4{
+  		margin-top: -10px;
+  		font-size: 14pt;
+  	}
+  
+  	.rectangle p{
+  		margin-top: -10px;
+  	}
+
+    .advantages {
+        padding: 60px 0;
+    }
+
+    .about {
+    	height: 2050px;
+    }
+
+    .block11 h1{
+    	margin-top: -1500px;
+    }
+
+    .rhomb1{
+    	position: relative;
+    	top: 400px;
+    	left: -150px;
+    }
+
+    .photo1{
+    	position: relative;
+    	top: -100px;
+    	left: -40px;
+    }
+
+    .photo2{
+    	position: relative;
+    	left: 150px;
+    	top: -450px;
+    }
+
+    .block22 h1{
+    	margin-top: 200px;
+    }
+
+    .rhomb2{
+    	position: relative;
+    	top: 30px;
+    	left: -150px;
+    }
+
+    .photo3{
+    	position: relative;
+    	top: -450px;
+    	left: -40px;
+    }
+
+    .photo4{
+    	position: relative;
+    	left: 150px;
+    	top: -820px;
+    }
+
+    .works{
+    	height: 1100px;
+    }
+
+    .works h1{
+    	font-size: 18pt;
+    	margin-top: -90px;
+    }
+
+    .works h4{
+    	font-size: 14pt;
+    	margin-top: 60px;
+    }
+
+    .circle-work{
+    	position: relative;
+    	top: 230px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .logo1, .logo2{
+    	display: none;
+    }
+
+    .price{
+    	height: 1550px;
+    }
+
+	.price h1{
+		margin-top: -250px;
 	}
+
+	.price h4{
+		font-size: 14pt;
+	}
+
+	.price p{
+		font-size: 12pt;
+	}
+
+	.price-block{
+		margin: 0 auto;
+	}
+
+    .price-block{
+    	position: relative;
+    	top: 350px;
+    	left: -5px;
+    	width: 300px;
+    	margin-bottom: 15px;
+        font-size: 14pt;
+    }
+
+    .news{
+    	height: 1800px;
+        padding: 60px 0;
+    }
+
+    .news-post{
+    	width: 290px;
+    	height: 260px;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+    }
+
+    .news-post p{
+		margin-top: 20px;
+    }
+
+    .news-post .info {
+        margin-left: 0;
+        margin-top: 20px
+    }
+
+    .news h2{
+    	margin-left: 20px;
+		margin-top: 30px;
+    }
+
+    .day-btn{
+    	width: 130px;
+    }
+
+	.people{
+		height: 500px;
+	}
+
+	.people h3{
+		font-size: 18pt;
+		margin-left: 20px;	
+	}
+
+	.news_logo1, .news_logo2{
+		display: none;
+	}
+
+    .trial{
+    	text-align: center;
+        padding: 60px 0;
+    }
+
+    .btn_big{
+		margin-top: 30px;
+    }
+
+    .footer{
+    	height: 400px;
+    }
+
+    .footer-top {
+    	height: 200px;
+      	padding: 30px 0;
+    }
+	
+	.footer-form{
+		text-align: center;
+		width: 200px;
+	}
+
+    .footer-down{
+    	height: 200px;
+    }
+
+	.footer-down .copy{
+    	font-size: 10pt;
+    	margin-left: -10px;
+    }
+
+    .footer-down .footer-menu{
+    	font-size: 10pt;
+    	margin-left: -10px;
+    }
+
+    .footer-down .footer-social{
+    	margin-left: -50px;
+    }
+
+    .footer-up{
+    	position: relative;
+    	top: 90px;
+    	left: 250px;
+    }
+
+    .people{
+        padding: 60px 0;
+        background-image: none;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 520px){
+	.header {
+        padding: 0 15px;
+	}
+	
+    .main{
+        background-size: 180%;
+        background-position: bottom;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .main img{
+        max-width: 450px;
+    }
+
+    .rectangle{
+  		position: relative;
+  		top: 0px;
+  		width: auto;
+  		margin: 0 auto;
+  	}
+
+  	.block1, .block2, .block3{
+    	position: relative;
+    	left: 0px;
+    	margin-bottom: 20px;
+    } 
+
+    .features{
+    	height: 1000px;
+    }
+  
+  	.rectangle h4{
+  		margin-top: -10px;
+  		font-size: 14pt;
+  	}
+  
+  	.rectangle p{
+  		margin-top: -10px;
+  	}
+	
+	.about{
+		height: 1950px;
+	}
+
+	.block11 h1{
+    	margin-top: -1550px;
+    }
+
+    .rhomb1{
+    	position: relative;
+    	top: 320px;
+    	left: -80px;
+    }
+
+    .photo1{
+    	position: relative;
+    	top: -150px;
+    	left: 0px;
+    }
+
+    .photo2{
+    	position: relative;
+    	left: 200px;
+    	top: -520px;
+    }
+
+    .block22 h1{
+    	margin-top: 100px;
+    }
+
+    .rhomb2{
+    	position: relative;
+    	top: 30px;
+    	left: -80px;
+    }
+
+    .photo3{
+    	position: relative;
+    	top: -450px;
+    	left: 0px;
+    }
+
+    .photo4{
+    	position: relative;
+    	left: 200px;
+    	top: -820px;
+    }
+	
+	.works{
+		height: 1100px;
+		padding: 30px 0;
+	}
+
+	.works h1{
+		margin-top: -150px;
+	}
+
+	.logo1, .logo2{
+		position: relative;
+		top: 70px;
+	}
+
+	.logo1{
+		margin-right: -15px;
+	}
+
+	.logo2{
+		margin-left: -15px;
+	}
+
+	.line{
+		display: none;
+	}
+
+	.circle-work{
+		margin-top: 50px;
+	}
+
+    .about {
+        padding: 60px 0;
+    }
+
+	.price{
+		height: 1550px;
+	}
+
+	.price h1{
+		margin-top: -250px;
+	}
+
+	.price-block{
+		margin: 0 auto;
+	}
+
+    .price-block{
+    	position: relative;
+    	top: 350px;
+    	left: -5px;
+    	width: 300px;
+    	margin-bottom: 15px;
+        font-size: 14pt;
+    }
+
+	.people{
+		height: 400px;
+	}
+	
+	.news{
+		height: 1500px;
+	}
+
+	.news_logo1, .news_logo2{
+		left: 40%;
+	}
+
+	.news-post p{
+		margin-top: 20px;
+	}
+
+	.trial{
+		padding: 60px 0;
+	}
+
+	.trial h3, .trial span, .btn_big{
+		position: relative;
+		top: 0px;
+		left: 120px;
+	}
+
+	.btn_big{
+		margin-top: 30px;
+	}
+
+    .footer-top {
+    	height: 300px;
+        padding: 80px 0;
+    }
+
+    .people {
+        padding: 60px 0;
+        background-image: none
+    }
+
+    .footer-down .footer-up {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 767px) {
+
+    .header {
+        padding: 0 15px;
+	}
+	
+    .main{
+        background-size: 180%;
+        background-position: bottom;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .main img{
+        max-width: 450px;
+    }
+
+    .rectangle{
+  		position: relative;
+  		top: 0px;
+  		width: auto;
+  		margin: 0 auto;
+  	}
+
+  	.block1, .block2, .block3{
+    	position: relative;
+    	left: 0px;
+    	margin-bottom: 20px;
+    } 
+
+    .features{
+    	height: 1050px;
+    }
+  
+  	.rectangle h4{
+  		margin-top: -10px;
+  		font-size: 14pt;
+  	}
+  
+  	.rectangle p{
+  		margin-top: -10px;
+  	}
+	
+	.about{
+		height: 1900px;
+	}
+
+	.block11 h1{
+    	margin-top: -1250px;
+    }
+
+    .rhomb1{
+    	position: relative;
+    	top: 250px;
+    	left: -80px;
+    }
+
+    .photo1{
+    	position: relative;
+    	top: -220px;
+    	left: 0px;
+    }
+
+    .photo2{
+    	position: relative;
+    	left: -60px;
+    	top: -220px;
+    }
+
+    .block22 h1{
+    	margin-top: 50px;
+    }
+
+    .rhomb2{
+    	position: relative;
+    	top: 30px;
+    	left: -80px;
+    }
+
+    .photo3{
+    	position: relative;
+    	top: -450px;
+    	left: 0px;
+    }
+
+    .photo4{
+    	position: relative;
+    	left: -30px;
+    	top: -450px;
+    }
+	
+	.works{
+		height: 1100px;
+		padding: 30px 0;
+	}
+
+	.works h1{
+		margin-top: -150px;
+	}
+
+	.logo1, .logo2{
+		position: relative;
+		top: 70px;
+	}
+
+	.logo1{
+		margin-right: -15px;
+	}
+
+	.logo2{
+		margin-left: -15px;
+	}
+
+	.line{
+		display: none;
+	}
+
+	.circle-work{
+		margin-top: 50px;
+	}
+
+    .about{
+        padding: 60px 0;
+    }
+
+	.price{
+		height: 1550px;
+	}
+
+	.price h1{
+		margin-top: -250px;
+	}
+
+	.price-block{
+		margin: 0 auto;
+	}
+
+    .price-block{
+    	position: relative;
+    	top: 350px;
+    	left: -5px;
+    	width: 300px;
+    	margin-bottom: 15px;
+        font-size: 14pt;
+    }
+
+	.people{
+		height: 400px;
+	}
+	
+	.news{
+		height: 1500px;
+	}
+
+	.news_logo1, .news_logo2{
+		left: 40%;
+	}
+
+	.news-post p{
+		margin-top: 20px;
+	}
+
+	.trial{
+		padding: 60px 0;
+	}
+
+	.trial h3, .trial span, .btn_big{
+		position: relative;
+		top: 0px;
+		left: 120px;
+	}
+
+	.btn_big{
+		margin-top: 30px;
+	}
+
+    .footer-top{
+    	height: 300px;
+        padding: 80px 0;
+    }
+
+    .people {
+        padding: 60px 0;
+        background-image: none
+    }
+
+    .footer-down .footer-up{
+        bottom: 10px;
+        right: 10px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .main {
+        background-size: 145%;
+        background-position: bottom;
+    }
+
+    .main img {
+        max-width: 650px;
+    }
+	
+	.features{
+		height: 930px;
+	}
+
+    .rectangle{
+    	width: 720px;
+    	height: 250px;
+    	margin-bottom: 20px;
+    }
+
+    .rectangle h4{
+    	margin-top: -50px;
+    	font-size: 12pt;
+    }
+
+    .rectangle p{
+		margin-top: -20px;
+    }
+
+    .block1,.block2,.block3{
+  	 	position: relative;
+  	 	top: 0px;
+  	 	left: -15px;
+  	 	padding: 30px;
+  	}
+
+  	.circle{
+  		position: relative;
+  		top: 0px;
+  	}
+
+  	.about{
+  		height: 1950px;
+  	}
+
+	.block11 h1{
+		margin-top: -200px;
+		margin-left: -350px;
+		font-size: 22pt;
+	}
+
+	.block11 p{
+		margin-top: 0px;
+		margin-left: -350px;
+	}
+
+	.more1{
+		margin-left: -350px;
+	}
+
+	.rhomb1{
+		position: relative;
+		top: 280px;
+		left: 50px;
+	}
+
+	.photo1{
+		position: relative;
+		top: -210px;
+		left: 120px;
+	}
+	
+	.photo2{
+		position: relative;
+		top: -580px;
+		left: 350px;
+	}
+
+	.block22 h1{
+		margin-top: 50px;
+		font-size: 22pt;
+	}
+
+	.rhomb2{
+		position: relative;
+		top: 650px;
+		left: -320px;
+	}
+
+	.photo3{
+		position: relative;
+		top: 150px;
+		left: -250px;
+	}
+	
+	.photo4{
+		position: relative;
+		top: -220px;
+		left: -30px;
+	}
+
+	.works h1{
+		font-size: 22pt;
+		margin-top: -100px;
+	}
+
+	.works h4{
+		font-size: 14pt;
+	}
+
+	.logo1, .logo2{
+		position: relative;
+		top: 110px;
+	}
+
+	.logo1{
+		margin-right: -15px;
+	}
+
+	.logo2{
+		margin-left: -15px;
+	}
+
+	.works .line{
+		width: 500px;
+	}
+	
+	.price{
+		height: 1600px;
+	}
+
+	.price h1{
+		font-size: 22pt;
+		margin-top: -250px;
+	}
+	
+	.price-block{
+		position: relative;
+		top: 280px;
+		left: 160px;
+		margin: 10px 0px;
+	}
+
+    .people{
+        padding: 60px 0;
+        background-position: top 0 left -400px
+    }
+
+    .news{
+    	height: 1450px;
+    }
+
+    .news h2{
+    	font-size: 24pt;
+    	margin-top: -50px;
+    }
+
+    .news_logo1, .news_logo2{
+  		position: relative;
+  		top: -45px;
+  		left: 300px;
+  	}
+
+  	.footer{
+  		height: 560px;
+  	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
 
 	.main {
     	background-size: 123%;
-    	background-position: bottom 50% left 10%;
-  	}  .header__menu{
-  	position: relative;
-  	right: -30px;
-  }
+    	background-position: bottom 0% left 20%;
+  	}  
 
-  .header__logo{
-  	margin-left: 30px;
-  }
-  .main img {
-    max-width: 600px;
-  }
+  	.main img{
+  		max-width: 600px;
+  	}
 
-  .about__line {
-    top: 50%;
-  }
+  	.header .signUp-btn{
+  		background: #0063dd;
+  		padding: 10px 45px;
+  	}
 
-  .about .block11{
-  	width: 350px;
-    height: 435px;
-  }
+  	 .rectangle{
+  	 	width: 320px;
+  	 	height: 290px;
+  	 	padding: 10px 10px;
+  	 }
 
-  .about .block22{
-  	width: 350px;
-    height: 435px;
-  }
+  	.block1{
+  	 	position: relative;
+  	 	left: -35px;
+  	}
+  	
+  	.block2{
+  		position: relative;
+  		left: -15px;
+  	}
+  	
+  	.block3{
+  			position: relative;
+  			left: 5px;
+  	}
 
-  .people {
-    background-position: top 0 left -95%;
-  }
+  	.circle{
+  		margin-top: -35px;
+  	}
+
+  	.works .line{
+  		left: -5%;
+  	}
+	
+	.about .rhomb1, .about .rhomb2{
+		width: 560px;
+    	height: 560px;
+	}
+	
+	.block11 h1, .block22 h1{
+		margin-top: -130px;
+	}
+
+	.rhomb2{
+		position: relative;
+		right: 30px;
+	}
+
+	.photo2{
+		position: relative;
+		left: 230px;
+		top: -850px;
+	}
+
+	.photo3{
+		position: relative;
+		right: 20px;
+		bottom: 500px;
+	}
+
+	.photo4{
+		position: relative;
+		left: 150px;
+		bottom: 870px;	
+	}
+
+  	.people {
+  		background-position: top 0 left -95%;
+  	}
+  	
+  	.price h1{
+  		margin-top: -350px;
+  	}
+
+  	.price-block{
+  		width: 300px;
+  	}
+
+  	.day-btn{
+  		width: 130px;
+  		padding: 5px 5px;
+  	}
+
+  	.news_logo1, .news_logo2{
+  		position: relative;
+  		left: 250px;
+  	}
+
+  	.footer-down{
+  		font-size: 10pt;
+  	}
+
+  	.footer-social{
+  		margin-right: 130px;
+  	}
 }
 
 @media (min-width: 1200px) and (max-width: 1650px) {
@@ -1020,15 +1910,16 @@ a:hover {
   	margin-left: 100px;
   }
 
-  .header__menu{
-  	position: relative;
-  	right: 100px;
+  .header .signUp-btn{
+  	background: #0063dd;
+  	padding: 10px 40px;
   }
 
   .main {
-	height: 800px;
+  	padding: 110px;
+  	height: 850px;
     background-size: 130%;
-    background-position: bottom 30% left 85%;
+    background-position: bottom 40% left 50%;
   }
 
   .main img {
@@ -1038,6 +1929,10 @@ a:hover {
   .rhomb2{
 	position: relative;
 	right:50px;
+  }
+
+  .price h1{
+  	margin-top: -300px;
   }
   
   .people {
@@ -1049,7 +1944,7 @@ a:hover {
   }
  
   .footer-up{
-  	margin-right: 80px;
+  	margin-right: 0px;
   }
 }
 
@@ -1060,9 +1955,13 @@ a:hover {
   }
 
   .main {
-	  height: 850px;
+	height: 850px;
     background-size: 100%;
   	background-position: right top;
+  }
+
+  .price h1{
+  	margin-top: -300px;
   }
 
   .main img{
@@ -1089,6 +1988,10 @@ a:hover {
   	background-position: center bottom;
   }
 
+  .price h1{
+  	margin-top: -300px;
+  }
+
   .people {
     background-position: left;
   }
@@ -1097,4 +2000,3 @@ a:hover {
   	margin-right: 150px;
   }
 }
-
