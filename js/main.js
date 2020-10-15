@@ -63,6 +63,15 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+// let carousel = new Carousel('.carousel-container', {
+// 	slidesPerView: 3,
+// 	spaceBetween: 30,
+// 	pagination: {
+// 		el: '.carousel-pagination',
+// 		clickable: true
+// 	}
+// });
+
 $('.flowing-scroll').on( 'click', function(){ 
     var el = $(this);
     var dest = el.attr('href');
