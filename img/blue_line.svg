@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1" viewBox="0 0 680 1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0f7bff;
+        stroke-linecap: round;
+        stroke-width: 1px;
+        stroke-dasharray: 0.001 3;
+      }
+    </style>
+  </defs>
+  <rect id="Line_" data-name="Line " class="cls-1" width="680" height="1"/>
+</svg>
