@@ -267,6 +267,15 @@ a:hover {
     font-weight: 700;
 }
 
+.full-width{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    rigth: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 .header.js_scroll {
     position: fixed;
     background: #0f7bff;
@@ -1081,8 +1090,12 @@ img.about__line {
     }
 
     .scope__item .background {
-        width: 375px;
-        height: 435px;
+        width: 345px;
+        height: 400px;
+    }
+
+    .scope_second .background {
+        right: 60px;
     }
 
     .people {
@@ -1117,6 +1130,15 @@ img.about__line {
 
     .main img {
         max-width: 600px;
+    }
+
+    .scope__item .background {
+        width: 375px;
+        height: 435px;
+    }
+
+    .scope_second .background {
+        right: 60px;
     }
 
     .people {
